@@ -1,0 +1,12 @@
+[Unit]
+Description="Chainx Node"
+
+[Service]
+User=root
+WorkingDirectory=/root/
+ExecStart=/root/chainx/start.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
